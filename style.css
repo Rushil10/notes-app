@@ -1,0 +1,47 @@
+#features{
+  background-color: lightcoral;
+}
+.first{
+  background-color: gainsboro;
+}
+.li{
+  background-color: lightblue;
+}
+.margcard{
+  margin-bottom: 6px;
+}
+.seccard{
+  background-color:lightseagreen;
+}
+.btnmarg{
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-right: 10px;
+  margin-left: 0px;
+  
+}
+.margi{
+  margin:auto;
+}
+.btnmarg2{
+  margin-right: 6px;
+}
+.color1{
+  background-color: lightgreen;
+  color:black;
+}
+.color2{
+  background-color:khaki;
+  color:black;
+}
+.color3{
+  background-color:fuchsia;
+  color: black
+}
+.color4{
+  background-color: sandybrown;
+  color: black;
+}
+.bd{
+  background-color: linen;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create Notes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    
+    <link href="style.css" rel="stylesheet">
+    <linl rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
+   
+   
+    
+    
+    
+    
+  </head>
+  <body>
+   
+    <div class="container">
+      <div class="icon">
+        <div class="card margcard">
+          <div class="card-header first">
+            <h2 class="heading text-lg-left text-sm-center text-md-center"><img src="images/nm.png"> Notes</h2>
+          </div>
+          <div class="card-body" id="features">
+            <h3><b><em>Features:</em></b></h3>
+            <ul class="list-group">
+              <li class="list-group-item li">Create A Note</li>
+              <li class="list-group-item li">Give Notes Different Colors For Priority</li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+      <div class="card seccard">
+        <div class="card-body">
+         <form class="form-inline mb-3" id="additem">
+          <input type="text" class="form-control mr-2" placeholder="Enter text here" id="notetext">
+          <input type="submit" class="btn btn-dark btnmarg mr-2" value="Create">
+          <select class="form-control mr-2" id="formColor">
+            <option value="color1">color1</option>
+            <option value="color2">color2</option>
+            <option value="color3">color3</option>
+            <option value="color4">color4</option>
+          </select>
+         </form>
+         <div class="card-body" id="notes">
+           <ul class="list-group">
+             
+           </ul>
+         </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
