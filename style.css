@@ -45,3 +45,9 @@
 .bd{
   background-color: linen;
 }
+.lt{
+  text-decoration: line-through;
+}
+.ltr{
+  text-decoration: none;
+}

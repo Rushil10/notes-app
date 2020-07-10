@@ -11,6 +11,7 @@ function addnote(e) {
   var text=document.getElementById('notetext').value;
   var div=document.createElement('div');
   var editbtn=document.createElement('button');
+  var donebtn=document.createElement('button');
   div.className='card bd';
   var p=document.createElement('p');
   p.appendChild(document.createTextNode(text));
@@ -21,6 +22,12 @@ function addnote(e) {
   editbtn.appendChild(document.createTextNode('Edit'));
   editbtn.id='editid';
   editbtn.addEventListener('click',editnote);
+  donebtn.className='btn btn-sm btn-success float-left btnmarg2 done';
+  donebtn.innerHTML="Done";
+  donebtn.id="donebt";
+  donebtn.addEventListener('click',doneline);
+
+
   div.appendChild(p);
   var deletebtn=document.createElement('button');
   deletebtn.className='btn btn-danger btn-sm float-left btnmarg2 delete';
@@ -29,7 +36,9 @@ function addnote(e) {
   var body=document.createElement('card-body');
   //body.className='bd';
   body.appendChild(editbtn);
+  body.appendChild(donebtn);
   body.appendChild(deletebtn);
+
   div.style.marginTop='10px';
   body.style.margin='8px';
  /* editbtn.className='btn btn-sm float-left btn-info edit';
@@ -61,4 +70,23 @@ function editnote(e){
     document.activeElement.parentElement.parentElement.childNodes[0].contentEditable="false";
     e.target.innerHTML="Edit";
   }
+}
+var x=0;
+function doneline(e){
+  /*console.log(document.activeElement.parentElement.parentElement.childNodes[0]);
+  document.activeElement.parentElement.parentElement.childNodes[0].className+=" lt";*/
+  x=x+1;
+  if(x%2==0){
+    //console.log(x)
+    /*document.activeElement.parentElement.parentElement.childNodes[0].className+=" ltr";*/
+    document.activeElement.parentElement.parentElement.childNodes[0].classList.remove('lt');
+    e.target.innerHTML="Done";
+  }
+  else{
+    /*console.log(document.activeElement.parentElement.parentElement.childNodes[0]);*/
+    document.activeElement.parentElement.parentElement.childNodes[0].className+=" lt"
+    e.target.innerHTML="Cancel";
+  }
+  
+  
 }
