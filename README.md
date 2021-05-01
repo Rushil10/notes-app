@@ -4,4 +4,4 @@
 * Can also choose different theme for each note.
 * This is created using html,css,bootstrap and jquery.
 
-![](images/sample.png)
+![](images/sample.PNG)
